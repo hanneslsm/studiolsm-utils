@@ -1,6 +1,6 @@
 <?php
 /**
- * Index file for StudiolsmUtils modules directory
+ * Index file for StudiolsmUtils features directory
  * Prevents direct access
  *
  * @package StudiolsmUtils

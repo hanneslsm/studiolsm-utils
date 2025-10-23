@@ -9,7 +9,7 @@ This is a util plugin, containing a collection of feature plugins.
 
 ### Project Structure
 
-* `/modules`: A collection of modules. 
+* `/features`: A collection of modular features. 
 * `/includes`: Setup and configuration files for this plugin.
 
 ## Building and Running

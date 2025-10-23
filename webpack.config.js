@@ -1,7 +1,7 @@
 /**
  * Custom Webpack configuration for Studiolsm Utils.
  *
- * - Discovers SCSS files inside src/modules and compiles them to build/modules/<module>/assets/css.
+ * - Discovers SCSS files inside src/features and compiles them to build/features/<feature>/assets/css.
  * - Copies the remaining PHP and asset files from src to build.
  */
 
@@ -74,7 +74,7 @@ const collectScssFiles = (directory) => {
 	return entries;
 };
 
-const scssFiles = collectScssFiles(path.resolve(srcDir, 'modules'));
+const scssFiles = collectScssFiles(path.resolve(srcDir, 'features'));
 const entries = {};
 
 scssFiles.forEach((filePath) => {

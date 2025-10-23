@@ -3,12 +3,12 @@
  * CSS Classes Panel Module for StudiolsmUtils plugin
  *
  * @since 1.0.0
- * @package StudiolsmUtils\Modules\CssClassesPanel
+ * @package StudiolsmUtils\Features\CssClassesPanel
  */
 
 declare(strict_types=1);
 
-namespace StudiolsmUtils\Modules\CssClassesPanel;
+namespace StudiolsmUtils\Features\CssClassesPanel;
 
 use StudiolsmUtils\Includes\AbstractModule;
 

@@ -74,14 +74,14 @@ class StudiolsmUtils
         'utility-classes' => [
             'name' => 'CSS Classes Panel',
             'description' => 'Gutenberg Inspector panel for utility/helper CSS classes with SCSS parsing and responsive breakpoints.',
-            'class' => 'StudiolsmUtils\\Modules\\CssClassesPanel\\CssClassesPanelModule',
+            'class' => 'StudiolsmUtils\\Features\\CssClassesPanel\\CssClassesPanelModule',
             'enabled' => true, // Default enabled
         ],
         // Future modules can be added here
         // 'block-extensions' => [
         //     'name' => 'Block Extensions',
         //     'description' => 'Additional block editor enhancements and custom blocks.',
-        //     'class' => 'StudiolsmUtils\\Modules\\BlockExtensions\\BlockExtensionsModule',
+        //     'class' => 'StudiolsmUtils\\Features\\BlockExtensions\\BlockExtensionsModule',
         //     'enabled' => false,
         // ],
     ];
