@@ -38,7 +38,7 @@ class CssClassesPanelModule extends AbstractModule
      * @var string
      * @since 1.0.0
      */
-    protected string $version = '3.0.0';
+    protected string $version = '2.0.0';
 
     /**
      * Initialize the module
