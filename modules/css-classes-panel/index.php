@@ -1,9 +1,9 @@
 <?php
 /**
- * Index file for Utility Classes module
+ * Index file for CSS Classes Panel module
  * Prevents direct access
  *
- * @package StudiolsmUtils\Modules\UtilityClasses
+ * @package StudiolsmUtils\Modules\CssClassesPanel
  */
 
 // Prevent direct access
@@ -12,3 +12,4 @@ if (!defined('ABSPATH')) {
 }
 
 // Silence is golden
+
