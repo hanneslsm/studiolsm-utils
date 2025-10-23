@@ -2,7 +2,7 @@
 /**
  * CSS Classes Panel Module for StudiolsmUtils plugin
  *
- * @since 3.0.1
+ * @since 1.0.0
  * @package StudiolsmUtils\Modules\CssClassesPanel
  */
 
@@ -20,7 +20,7 @@ if (!defined('ABSPATH')) {
 /**
  * CSS Classes Panel module class
  *
- * @since 3.0.1
+ * @since 1.0.0
  */
 class CssClassesPanelModule extends AbstractModule
 {
@@ -28,7 +28,7 @@ class CssClassesPanelModule extends AbstractModule
      * Module name
      *
      * @var string
-     * @since 3.0.1
+     * @since 1.0.0
      */
     protected string $name = 'CSS Classes Panel';
 
@@ -36,14 +36,14 @@ class CssClassesPanelModule extends AbstractModule
      * Module version
      *
      * @var string
-     * @since 3.0.1
+     * @since 1.0.0
      */
     protected string $version = '3.0.0';
 
     /**
      * Initialize the module
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     public function init(): void
     {
@@ -53,7 +53,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Add WordPress hooks
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     protected function add_hooks(): void
     {
@@ -72,7 +72,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Load text domain for module translations
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     public function load_textdomain(): void
     {
@@ -83,7 +83,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Enqueue block editor assets
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     public function enqueue_editor_assets(): void
     {
@@ -107,7 +107,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Enqueue frontend assets
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     public function enqueue_frontend_assets(): void
     {
@@ -127,7 +127,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Enqueue block assets (both editor and frontend)
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     public function enqueue_block_assets(): void
     {
@@ -152,7 +152,7 @@ class CssClassesPanelModule extends AbstractModule
      *   appear in the order they occur in the SCSS, each followed by its own
      *   classes.
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     private function collect_items(): array
     {
@@ -317,7 +317,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Get compiled CSS from SCSS file
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     private function get_compiled_css(): string
     {
@@ -397,7 +397,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Compile SCSS file to CSS
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     private function compile_scss_to_css(string $scss_file): string
     {
@@ -490,7 +490,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Add inline CSS directly to head (fallback method)
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     public function add_inline_css(): void
     {
@@ -505,7 +505,7 @@ class CssClassesPanelModule extends AbstractModule
     /**
      * Return the inline JavaScript for the React component
      *
-     * @since 3.0.1
+     * @since 1.0.0
      */
     private function inline_js(): string
     {
