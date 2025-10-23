@@ -1,6 +1,13 @@
 # Changelog
 
+## [3.0.1] - 2025-10-23
+- Fixed module autoloading so the Utility Classes panel loads in the editor again.
+- Normalised class file names to match the autoloader naming convention.
+- Confirmed compiled CSS continues to load in both editor and frontend contexts.
 
+
+## [3.0.0] - 2025-10-20
+- Move from theme to plugin.
 ---
 
 ## Previous Versions

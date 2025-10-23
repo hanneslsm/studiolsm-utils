@@ -1,73 +1,34 @@
 # Studio Leismann Utils
 
-A modular WordPress plugin that adds utility tools for WordPress development.
-
-## What it does
-
-- **Utility Classes Panel**: Adds a Gutenberg panel for applying CSS utility classes
-- **Modular System**: Enable/disable features as needed
-- **Auto CSS Compilation**: Converts SCSS to CSS automatically
-- **No Setup Required**: Works out of the box
-
-## Quick Start
-
-1. **Install**: Upload to `/wp-content/plugins/` and activate
-2. **Configure**: Go to **Settings → Studio Leismann Utils**
-3. **Use**: The utility classes panel appears in Gutenberg editor
+Studio Leismann Utils is a modular helper plugin that adds WordPress editor tooling.
 
 ## Requirements
 
-- WordPress 6.3+
-- PHP 8.1+
+- WordPress 6.3 or newer
+- PHP 8.1 or newer
 
-## Features
+## Installation
 
-### Utility Classes Panel
-- Automatically reads your SCSS utility classes
-- Organizes classes by breakpoints (Mobile, Tablet, Desktop)
-- Search functionality to find classes quickly
-- Visual indicators show active classes
-- Works in both editor and frontend
+1. Upload the plugin into `wp-content/plugins/` and activate it.
+2. Visit **Settings → Studio Leismann Utils** to review which modules are active.
 
-### How it works
-The plugin looks for `studiolsm-helpers.scss` in these locations:
-1. Plugin directory (recommended)
-2. Your theme's SCSS folder
-3. Custom path (using filter)
+## Included modules
+1. **Utility Classes Panel** – shows all helper classes in the inspector sidebar, lets editors toggle classes, and highlights active selections.
 
-## SCSS Format
 
-```scss
-// Global classes (Default tab)
-.text-center { text-align: center; }
-.hidden { display: none; }
 
-// Responsive classes (creates tabs)
-@include responsive-styles($breakpoint-mobile, "with-mobile") {
-    /**
-     * Title: Display
-     * Description: Show/hide elements
-     */
-    .#{$prefix}-block { display: block; }
-    .#{$prefix}-none { display: none; }
-}
-```
+### 1. Utility Classes Panel highlights
 
-## Customization
+- Automatically parses `studiolsm-helpers.scss` to list helper classes and breakpoint variants.
+- Provides search and section headings for quick discovery.
+- Works in both the editor and on the frontend by enqueueing the compiled CSS.
+- Supports lookups in the module assets, legacy plugin folder, and common theme paths, and can be filtered via `studiolsm_utility_classes_scss_path`.
 
-### Custom SCSS Location
 ```php
-add_filter('studiolsm_utility_classes_scss_path', function($path) {
-    return get_theme_file_path('assets/scss/utilities.scss');
-});
+add_filter( 'studiolsm_utility_classes_scss_path', function( $path ) {
+    return get_theme_file_path( 'assets/scss/utilities/studiolsm-helpers.scss' );
+} );
 ```
-
-### Disable Modules
-Go to **Settings → Studio Leismann Utils** to enable/disable features.
-
-## Version 3.0.0
-
-Complete rewrite with modular architecture. Migrating from the old plugin? It will automatically detect your existing SCSS files.
 
 ## License
 
