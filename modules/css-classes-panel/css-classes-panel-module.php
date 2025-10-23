@@ -569,7 +569,7 @@ class CssClassesPanelModule extends AbstractModule
 
 		const header = el('span',{
 			style:{display:'flex',alignItems:'center',gap:'0.4em'}
-		},[ 'Utility classes', activeSet.size ? el(Dot) : null ]);
+		},[ 'CSS classes', activeSet.size ? el(Dot) : null ]);
 
 		const renderTab = tab => {
 			const pool = tabsMap.get(tab.name).items;
@@ -621,4 +621,3 @@ class CssClassesPanelModule extends AbstractModule
 JS;
     }
 }
-
