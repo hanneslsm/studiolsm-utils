@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.1.0] - 2025-10-23
+- Introduced `src/` source tree with automated build output in `build/`.
+- Added webpack pipeline that compiles module SCSS to minified CSS and copies PHP/assets.
+- Updated bootstrap logic to load compiled files when available while still supporting development mode.
+
 ## [3.0.1] - 2025-10-23
 - Fixed module autoloading so the Utility Classes panel loads in the editor again.
 - Normalised class file names to match the autoloader naming convention.
