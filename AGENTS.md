@@ -53,6 +53,12 @@ Additionally, the [inline documentation standards for WordPress](https://develop
 
 Note that `lint-staged` will be used to automatically run code quality checks with the tooling based on the staged files.
 
+## Workflow Expectations
+
+* Always update `CHANGELOG.md` with a concise entry whenever functionality or documentation changes are delivered.
+* Before starting a new task, create a dedicated branch and prepare a pull request for the work once changes are staged.
+* Prepare work so it can be merged smoothly: ensure commits are ready for a pull request and include a clear summary of changes and follow-up steps when reporting back to the requester.
+
 ### Indentation
 
 In general, indentation should use tabs. Refer to `.editorconfig` in the project root for specifics.
