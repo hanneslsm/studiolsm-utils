@@ -1,13 +1,13 @@
 <?php
 /**
- * Utility Classes Module for StudiolsmUtils plugin
+ * CSS Classes Panel Module for StudiolsmUtils plugin
  *
- * @package StudiolsmUtils\Modules\UtilityClasses
+ * @package StudiolsmUtils\Modules\CssClassesPanel
  */
 
 declare(strict_types=1);
 
-namespace StudiolsmUtils\Modules\UtilityClasses;
+namespace StudiolsmUtils\Modules\CssClassesPanel;
 
 use StudiolsmUtils\Includes\AbstractModule;
 
@@ -17,16 +17,16 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Utility Classes module class
+ * CSS Classes Panel module class
  */
-class UtilityClassesModule extends AbstractModule
+class CssClassesPanelModule extends AbstractModule
 {
     /**
      * Module name
      *
      * @var string
      */
-    protected string $name = 'Utility Classes Panel';
+    protected string $name = 'CSS Classes Panel';
 
     /**
      * Module version
@@ -621,3 +621,4 @@ class UtilityClassesModule extends AbstractModule
 JS;
     }
 }
+

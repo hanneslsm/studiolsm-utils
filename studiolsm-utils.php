@@ -55,9 +55,9 @@ class StudiolsmUtils
      */
     private array $available_modules = [
         'utility-classes' => [
-            'name' => 'Utility Classes Panel',
-            'description' => 'Gutenberg Inspector panel for utility helper classes with SCSS parsing and responsive breakpoints.',
-            'class' => 'StudiolsmUtils\\Modules\\UtilityClasses\\UtilityClassesModule',
+            'name' => 'CSS Classes Panel',
+            'description' => 'Gutenberg Inspector panel for utility/helper CSS classes with SCSS parsing and responsive breakpoints.',
+            'class' => 'StudiolsmUtils\\Modules\\CssClassesPanel\\CssClassesPanelModule',
             'enabled' => true, // Default enabled
         ],
         // Future modules can be added here

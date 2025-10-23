@@ -13,11 +13,11 @@ Studio Leismann Utils is a modular helper plugin that adds WordPress editor tool
 2. Visit **Settings → Studio Leismann Utils** to review which modules are active.
 
 ## Included modules
-1. **Utility Classes Panel** – shows all helper classes in the inspector sidebar, lets editors toggle classes, and highlights active selections.
+1. **CSS Classes Panel** – shows all helper classes in the inspector sidebar, lets editors toggle classes, and highlights active selections.
 
 
 
-### 1. Utility Classes Panel highlights
+### 1. CSS Classes Panel highlights
 
 - Automatically parses `studiolsm-helpers.scss` to list helper classes and breakpoint variants.
 - Provides search and section headings for quick discovery.

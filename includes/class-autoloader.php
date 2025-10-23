@@ -54,18 +54,22 @@ class StudiolsmUtils_Autoloader
         };
 
         $normalised_parts = array_map($normalise, $parts);
-        $file = 'class-' . array_pop($normalised_parts) . '.php';
+        $last = array_pop($normalised_parts);
         $directory = $normalised_parts ? implode(DIRECTORY_SEPARATOR, $normalised_parts) . DIRECTORY_SEPARATOR : '';
 
+        // Try with and without the 'class-' prefix
         $path_variants = [
-            STUDIOLSM_UTILS_PLUGIN_DIR . $directory . $file,
+            STUDIOLSM_UTILS_PLUGIN_DIR . $directory . 'class-' . $last . '.php',
+            STUDIOLSM_UTILS_PLUGIN_DIR . $directory . $last . '.php',
         ];
 
         // Legacy fallback without camel-case splitting
         $legacy_parts = array_map(static fn($segment) => strtolower(str_replace('_', '-', $segment)), $parts);
-        $legacy_file = 'class-' . array_pop($legacy_parts) . '.php';
+        $legacy_last = array_pop($legacy_parts);
+        $legacy_file = 'class-' . $legacy_last . '.php';
         $legacy_directory = $legacy_parts ? implode(DIRECTORY_SEPARATOR, $legacy_parts) . DIRECTORY_SEPARATOR : '';
         $path_variants[] = STUDIOLSM_UTILS_PLUGIN_DIR . $legacy_directory . $legacy_file;
+        $path_variants[] = STUDIOLSM_UTILS_PLUGIN_DIR . $legacy_directory . $legacy_last . '.php';
 
         foreach (array_unique($path_variants) as $file_path) {
             if (is_readable($file_path)) {
